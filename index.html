@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLE SHEETS -->
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- JAVASCRIPT -->
+
+    <script defer src="script.js"></script>
+    <title>POMODORO 25</title>
+  </head>
+
+  <body>
+    <main class="centering">
+      <div class="audio-container"></div>
+      <!-- CONTAINER -->
+
+      <div class="container centering">
+        <!-- TOP DISPLAY -->
+
+        <div class="top-display centering">
+          <div class="display-laps centering">
+            <p class="display-laps-txt">
+              Completed <span class="attach-color">POMODOROS</span>: 0
+            </p>
+          </div>
+          <div class="display-about centering">
+            <p class="display-about-txt centering">ABOUT POMODORO</p>
+          </div>
+        </div>
+
+        <!-- COUNTER -->
+        <div class="count-number-container centering">
+          <i
+            class="fa-solid fa-volume-high sound-icon mute-icon-inactive mute-icon-active"
+          ></i>
+          <i
+            class="fa-solid mute-icon mute-icon mute-icon-inactive fa-volume-xmark"
+          ></i>
+          <p class="count-number">25:00</p>
+        </div>
+
+        <!-- BOTTOM DISPLAY -->
+
+        <div class="display-bottom centering">
+          <p class="display-mot-txt">
+            click <span class="attach-color">RUN</span> to start
+          </p>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+          <button class="btn btn--run">
+            <i class="fas fa-play"></i>&nbsp;&nbsp;RUN
+          </button>
+          <button class="btn btn--pause">
+            <i class="fas fa-pause"></i>&nbsp;&nbsp;PAUSE
+          </button>
+          <button class="btn btn--reset">
+            <i class="fas fa-sync"></i>&nbsp;&nbsp;RESET
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="overlay hidden"></div>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+
+      <h1 class="modal-heading">POMODORO TECHNIQUE</h1>
+      <p class="modal-txt">
+        The Pomodoro Technique is a time management system that encourages
+        people to work with the time they have—rather than against it. Using
+        this method, you break your workday into 25-minute chunks separated by
+        five-minute breaks. These intervals are referred to as pomodoros.
+      </p>
+    </div>
+  </body>
+</html>
